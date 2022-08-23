@@ -21,49 +21,88 @@
       </p>
     </header>
     <main class="bg-slate-800">
-      <section class="w-10/12 mx-auto flex flex-row gap-3 pt-5">
+      <section class="w-10/12 mx-auto flex flex-row gap-4 pt-5">
         <div class="basis-3/4">
-          <div class="grid grid-cols-3 gap-3">
+          <div class="grid grid-cols-3 gap-4">
             <div class="border border-slate-600 text-center bg-slate-900">
               <img src="images/Neymar-Paris-Marseille.jpg" alt="" />
-              <p class="text-white text-2xl font-semibold py-3">Naymar Jr.</p>
-              <button class="bg-sky-600 text-white w-9/12 py-1 my-3">
+              <p
+                id="naymar-text"
+                class="text-white text-2xl font-semibold py-3"
+              >
+                Naymar Jr.
+              </p>
+              <button
+                id="naymar-btn"
+                class="bg-sky-600 text-white w-9/12 py-1 my-3"
+              >
                 SELECT
               </button>
             </div>
             <div class="border border-slate-600 text-center bg-slate-900">
               <img src="images/Neymar-Paris-Marseille.jpg" alt="" />
-              <p class="text-white text-2xl font-semibold py-3">Naymar Jr.</p>
-              <button class="bg-sky-600 text-white w-9/12 py-1 my-3">
+              <p id="messi-text" class="text-white text-2xl font-semibold py-3">
+                Lionel Messi
+              </p>
+              <button
+                id="messi-btn"
+                class="bg-sky-600 text-white w-9/12 py-1 my-3"
+              >
                 SELECT
               </button>
             </div>
             <div class="border border-slate-600 text-center bg-slate-900">
               <img src="images/Neymar-Paris-Marseille.jpg" alt="" />
-              <p class="text-white text-2xl font-semibold py-3">Naymar Jr.</p>
-              <button class="bg-sky-600 text-white w-9/12 py-1 my-3">
+              <p id="ramos-text" class="text-white text-2xl font-semibold py-3">
+                Sergio Ramos
+              </p>
+              <button
+                id="ramos-btn"
+                class="bg-sky-600 text-white w-9/12 py-1 my-3"
+              >
                 SELECT
               </button>
             </div>
 
             <div class="border border-slate-600 text-center bg-slate-900">
               <img src="images/Neymar-Paris-Marseille.jpg" alt="" />
-              <p class="text-white text-2xl font-semibold py-3">Naymar Jr.</p>
-              <button class="bg-sky-600 text-white w-9/12 py-1 my-3">
+              <p
+                id="mbappe-text"
+                class="text-white text-2xl font-semibold py-3"
+              >
+                Kylian Mbappé
+              </p>
+              <button
+                id="mbappe-btn"
+                class="player bg-sky-600 text-white w-9/12 py-1 my-3"
+              >
                 SELECT
               </button>
             </div>
             <div class="border border-slate-600 text-center bg-slate-900">
               <img src="images/Neymar-Paris-Marseille.jpg" alt="" />
-              <p class="text-white text-2xl font-semibold py-3">Naymar Jr.</p>
-              <button class="bg-sky-600 text-white w-9/12 py-1 my-3">
+              <p
+                id="sanches-text"
+                class="text-white text-2xl font-semibold py-3"
+              >
+                Renato Sanches
+              </p>
+              <button
+                id="sanches-btn"
+                class="player bg-sky-600 text-white w-9/12 py-1 my-3"
+              >
                 SELECT
               </button>
             </div>
             <div class="border border-slate-600 text-center bg-slate-900">
               <img src="images/Neymar-Paris-Marseille.jpg" alt="" />
-              <p class="text-white text-2xl font-semibold py-3">Naymar Jr.</p>
-              <button class="bg-sky-600 text-white w-9/12 py-1 my-3">
+              <p id="navas-text" class="text-white text-2xl font-semibold py-3">
+                Keylor Navas
+              </p>
+              <button
+                id="navas-btn"
+                class="player bg-sky-600 text-white w-9/12 py-1 my-3"
+              >
                 SELECT
               </button>
             </div>
@@ -73,39 +112,55 @@
         <div class="basis-1/4">
           <div class="grid gap-6 text-center">
             <div class="bg-slate-900 text-white">
-              <h3 class="text-2xl">selected-v</h3>
-              <ol class="list-decimal list-inside">
-                <li>Lionel Mess</li>
-                <li>Naynar Jr</li>
-                <li>Kylian Mbappé</li>
-                <li>Renato Sanches</li>
-                <li>Keylor Navas</li>
-              </ol>
+              <h3 class="text-2xl py-4 font-semibold">selected-v</h3>
+              <ol id="selected-player" class="list-decimal list-inside"></ol>
             </div>
             <div class="bg-slate-900 text-white">
-              <h3 class="text-2xl py-5">Budget</h3>
+              <h3 class="text-2xlpy-4 font-semibold">Budget</h3>
               <div class="flex justify-around py-5">
                 <h3>Per player</h3>
-                <input type="text" class="bg-slate-700 py-2 w-6/12" />
+                <input
+                  id="per-player-input"
+                  type="text"
+                  class="bg-slate-700 py-2 w-6/12"
+                />
               </div>
-              <button class="bg-sky-600 text-white w-9/12 py-1 my-3">
+              <button
+                id="calculate-btn"
+                class="bg-sky-600 text-white w-9/12 py-1 my-3"
+              >
                 Calculate
               </button>
               <div class="w-9/12 flex justify-around py-5">
                 <h3>Player Expenses</h3>
-                <h3>$ <span>00</span></h3>
+                <h3>$<span id="player-expenses">00</span></h3>
               </div>
               <div class="flex justify-around py-5">
-                <h3>Per player</h3>
-                <input type="text" class="bg-slate-700 py-2 w-6/12" />
+                <h3>Manager</h3>
+                <input
+                  id="manager-input"
+                  type="text"
+                  class="bg-slate-700 py-2 w-6/12"
+                />
               </div>
               <div class="flex justify-around py-5">
-                <h3>Per player</h3>
-                <input type="text" class="bg-slate-700 py-2 w-6/12" />
+                <h3>Coach</h3>
+                <input
+                  id="coach-input"
+                  type="text"
+                  class="bg-slate-700 py-2 w-6/12"
+                />
               </div>
-              <button class="bg-sky-600 text-white w-9/12 py-1 my-3">
+              <button
+                id="Calculate-Total"
+                class="bg-sky-600 text-white w-9/12 py-1 my-3"
+              >
                 Calculate
               </button>
+              <div class="w-9/12 flex justify-around py-5">
+                <h3>Total</h3>
+                <h3>$<span id="total">00</span></h3>
+              </div>
             </div>
           </div>
         </div>
